@@ -218,3 +218,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# GITAI-01 local-only secrets (public repository guard)
+# These rules reduce accidental uploads; they do NOT replace a source-content scan.
+**/secrets.h
+**/credentials.h
+**/wifi_credentials.h
+**/wifi_config.local.h
+**/config.local.h
+**/config.local.json
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
